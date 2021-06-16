@@ -40,7 +40,7 @@ writeln('Вариант 24');
   end;
 
   if abs(b-0.8*x+a) <= 1e-10 then 
-  begin y:=0.704*power(ctg(6.91*a/b/power(x, 3)), 2.1) - 0.236*log(sqr(a)-3.5*b*x) + 0.55*power(arth(b/a), 0.1);
+  begin y:=0.704*power(ctg(6.91*a/b/power(x, 3)), 2.1) - 0.236*ln(sqr(a)-3.5*b*x) + 0.55*power(arth(b/a), 0.1);
   nf:=2 end // 2-ое условие
   else if b-0.8*x+a > 0 then
   begin y:=arcsin(b/0.49/x) - power(sech(sqr(a)*0.34*b), 1.7) + th(b/-1.58/a);
